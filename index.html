@@ -9,6 +9,31 @@
           notifyButton: {
             enable: true,
           },
+           promptOptions: {
+      slidedown: {
+        prompts: [
+          {
+            type: "email",
+            autoPrompt: false,
+            text: {
+              "smsLabel": "Insert Phone Number",
+              "acceptButton": "Submit",
+              "cancelButton": "No Thanks",
+              "actionMessage": "Receive the latest news, updates and offers as they happen.",
+              "updateMessage": "Update your push notification subscription preferences.",
+              "confirmMessage": "Thank You!",
+              "negativeUpdateButton": "Cancel",
+              "positiveUpdateButton": "Save Preferences",
+              "emailLabel": "Email Address"
+            },
+            delay: {
+              pageViews: 1,
+              timeDelay: 20
+            },
+          }
+        ]
+      }
+  }  
         });
       });
     </script>
