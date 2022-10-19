@@ -1,36 +1,30 @@
 <head>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-  <script>
-    OneSignal = window.OneSignal || [];
-    OneSignal.push(function() {
-      OneSignal.init({
-        appId: "6a4f6576-4130-47b7-85d0-a545196fa2b5",
-        requiresUserPrivacyConsent: true,
-        autoResubscribe: false,
-        notifyButton: {
-          enable: true,
-        },
-        welcomeNotification: {
-          "title": "OnTime UIUC",
-          "message": "Thanks for subscribing!",
-          // "url": "" /* Leave commented for the notification to not open a window on Chrome and Firefox (on Safari, it opens to your webpage) */
-        },
-        promptOptions: {
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "6a4f6576-4130-47b7-85d0-a545196fa2b5",
+      safari_web_id: "web.onesignal.auto.668b47bc-14aa-4b15-bbce-a605ba29fca6",
+      notifyButton: {
+        enable: true,
+       promptOptions: {
       slidedown: {
+        showSMSSlideDown: true,
         prompts: [
           {
-            type: "email",
-            autoPrompt: false,
+            type: "sms",
+            autoPrompt: true,
             text: {
               "smsLabel": "Insert Phone Number",
               "acceptButton": "Submit",
               "cancelButton": "No Thanks",
-              "actionMessage": "Receive the latest news, updates and offers as they happen.",
+              "actionMessage": "Recieve text updates with OnTime on when to leave for class!"
+",
               "updateMessage": "Update your push notification subscription preferences.",
               "confirmMessage": "Thank You!",
               "negativeUpdateButton": "Cancel",
               "positiveUpdateButton": "Save Preferences",
-              "emailLabel": "Email Address"
             },
             delay: {
               pageViews: 1,
@@ -39,11 +33,11 @@
           }
         ]
       }
-  },
-      });
-      OneSignal.showNativePrompt();
+  }
+      },
     });
-  </script>
+  });
+</script>
 </head>
 <h1>OnTime</h1>
 <body>
