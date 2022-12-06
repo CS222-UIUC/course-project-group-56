@@ -38,11 +38,12 @@ Installation Instructions:
 1) Install homebrew - https://brew.sh/
 2) Navigate to your terminal and run "brew install git"
 3) Navigate to your terminal and run "brew install python3"
-3) Click on the green "Code" button and copy the link
-4) Clone the link copied above and open on Visual Studio.
-5) Navigate to your terminal and run "pip3 install pandas", "pip3 install tabula", and "pip3 install datetime"
-6) Go to the "App.py" file and run the file
-7) Follow the instructions that show up on the console
+4) Navigate to your terminal and install Twilio with run 
+6) Click on the green "Code" button and copy the link
+7) Clone the link copied above and open on Visual Studio.
+8) Navigate to your terminal and run "pip3 install pandas", "pip3 install tabula", "pip3 install datetime", "pip3 install twilio", and "pip install streamlit"
+9) To run the app, type these commands into the terminal: "pipenv shell", "python -m streamlit run app.py"
+11) A browswer will automatically show up and follow the instructions that show up on the site
 
 
 Group Roles:
