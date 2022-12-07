@@ -18,13 +18,15 @@ get_courses() - This method is used to retrieve the course information from the 
 
 get_crn() - This method is used to retrieve the crn information from the schedule of the original dataframe. It takes in a CSV and the row number and returns a string from the CSV. Neeya wrote this method in Python.
 
-toTimeObject() - This method incorporates the datetime library in order to convert he givent time from standard time to military time. It has a paramenter of a string and  returns a string. Tabeeb wrote this method in Python.
+toTimeObject() - This method incorporates the datetime library in order to convert the given time from standard time to military time. It has a paramenter of a string and  returns a string. Tabeeb wrote this method in Python.
 
 getCurrentTime() - This method retrieves the current time for the user with the datetime library. It takes in no parameters and returns a string. Tabeeb wrote this method in Python.
 
 subtractMin() - This method identifies n minutes before the time given. This will be used to determine 20 minutes before the starting time of the user's class in order to send the notification. It takes in the parameters of a float for the minutes and string for the time and returns the new string. Tabeeb wrote this method in Python.
 
 getDay() - This method retrieves the current day for the user with the datetime library. It takes in no parameters and returns a string. Tabeeb wrote this method in Python.
+
+getTravelTime() - This method uses the Google Directions API to find how long it would take to travel between two locations. It utilizes the json library and request library and was written by Tabeeb in Python.
 
 notifs() - This method uses all the information to construct a text to send as a notification to the user. The parameters for this function is the dataframe, the day, and the current time and returns a string. Ria wrote this method in Python.
 
@@ -52,6 +54,6 @@ Aditya - Utilized Streamlit software to connect frontend and backend. Worked wit
 
 Neeya - Constructed scheduling parsing methods from the user's data. Worked with Pandas and Tabula libraries.
 
-Tabeeb - Developed all of the methods to identify dates and times from the user's data. Worked with Datetime library.
+Tabeeb - Developed the methods to identify dates and times and implemented the Google Directions API. Worked with Datetime library.
 
 Ria - Configured notifications for projects and integrated it with the backend. Worked with Twilio Library.
